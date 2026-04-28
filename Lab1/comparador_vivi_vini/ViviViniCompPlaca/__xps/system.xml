@@ -1,0 +1,10 @@
+
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Mar 11 09:25:28 2026">
+
+  <SYSTEMINFO ARCH="spartan3e" DEVICE="xc3s500e" PACKAGE="fg320" PART="xc3s500efg320-4" SOURCE="C:/Users/aula2/Desktop/CompDig-20260311T121741Z-3-001/CompDig/Lab1/comparador_vivi_vini/ViviViniCompPlaca/ViviViniCompPlaca.xmp" SPEEDGRADE="-4"/>
+
+  <EXTERNALPORTS/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

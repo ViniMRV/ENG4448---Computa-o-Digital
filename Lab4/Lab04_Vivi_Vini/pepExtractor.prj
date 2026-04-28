@@ -1,0 +1,5 @@
+work	"debounce_v1.vhd"
+work	"display7.vhd"
+work	"display7_converter.vhd"
+work	"keyboard.vhd"
+work	"main.vhd"

@@ -1,0 +1,15 @@
+V3 6
+FL "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/Debounce1_Vivi_Vinicius.vhd" 2026/03/18.11:05:24 P.20131013
+EN work/debounce_v1 1773845015 \
+      FL "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/Debounce1_Vivi_Vinicius.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/debounce_v1/Behavioral 1773845016 \
+      FL "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/Debounce1_Vivi_Vinicius.vhd" \
+      EN work/debounce_v1 1773845015
+FL "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd" 2026/03/18.11:43:29 P.20131013
+EN work/RotaryEncoder 1773845017 \
+      FL "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/RotaryEncoder/Behavioral 1773845018 \
+      FL "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd" \
+      EN work/RotaryEncoder 1773845017 AR work/debounce_v1/Behavioral 1773845016

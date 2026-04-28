@@ -1,0 +1,15 @@
+V3 6
+FL C:/Users/aula2/Desktop/CompDig-20260311T121741Z-3-001/CompDig/Lab1/Comparador2_vivi_vini/comparador2.vhd 2026/03/09.07:03:12 P.20131013
+EN work/comparador 1773233735 \
+      FL C:/Users/aula2/Desktop/CompDig-20260311T121741Z-3-001/CompDig/Lab1/Comparador2_vivi_vini/comparador2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/comparador/Behavioral 1773233736 \
+      FL C:/Users/aula2/Desktop/CompDig-20260311T121741Z-3-001/CompDig/Lab1/Comparador2_vivi_vini/comparador2.vhd \
+      EN work/comparador 1773233735
+EN work/comparador2 1773233737 \
+      FL C:/Users/aula2/Desktop/CompDig-20260311T121741Z-3-001/CompDig/Lab1/Comparador2_vivi_vini/comparador2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/comparador2/Behavioral 1773233738 \
+      FL C:/Users/aula2/Desktop/CompDig-20260311T121741Z-3-001/CompDig/Lab1/Comparador2_vivi_vini/comparador2.vhd \
+      EN work/comparador2 1773233737 AR work/comparador/Behavioral 1773233736
+FL "C:/Users/aula2/Desktop/Nova pasta/Comparador2_vivi_vini/comparador2.vhd" 2026/03/09.10:54:02 P.20131013

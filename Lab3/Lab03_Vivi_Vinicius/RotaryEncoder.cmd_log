@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.xst" -ofn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.syr" 
+xst -intstyle ise -ifn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.xst" -ofn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim RotaryEncoder.ngc RotaryEncoder_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotaryConstraint.ucf -p xc7a100t-csg324-3 "RotaryEncoder.ngc" RotaryEncoder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o RotaryEncoder_map.ncd RotaryEncoder.ngd RotaryEncoder.pcf 
+xst -intstyle ise -ifn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.xst" -ofn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotaryConstraint.ucf -p xc3s500e-fg320-4 "RotaryEncoder.ngc" RotaryEncoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RotaryEncoder_map.ncd RotaryEncoder.ngd RotaryEncoder.pcf 
+par -w -intstyle ise -ol high -t 1 RotaryEncoder_map.ncd RotaryEncoder.ncd RotaryEncoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RotaryEncoder.twx RotaryEncoder.ncd -o RotaryEncoder.twr RotaryEncoder.pcf -ucf RotaryConstraint.ucf 
+bitgen -intstyle ise -f RotaryEncoder.ut RotaryEncoder.ncd 
+xst -intstyle ise -ifn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.xst" -ofn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotaryConstraint.ucf -p xc3s500e-fg320-4 "RotaryEncoder.ngc" RotaryEncoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RotaryEncoder_map.ncd RotaryEncoder.ngd RotaryEncoder.pcf 
+par -w -intstyle ise -ol high -t 1 RotaryEncoder_map.ncd RotaryEncoder.ncd RotaryEncoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RotaryEncoder.twx RotaryEncoder.ncd -o RotaryEncoder.twr RotaryEncoder.pcf -ucf RotaryConstraint.ucf 
+bitgen -intstyle ise -f RotaryEncoder.ut RotaryEncoder.ncd 

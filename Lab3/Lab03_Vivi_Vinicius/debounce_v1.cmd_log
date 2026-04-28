@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/debounce_v1.xst" -ofn "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/debounce_v1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RotaryConstraint.ucf -p xc7a100t-csg324-3 "debounce_v1.ngc" debounce_v1.ngd  

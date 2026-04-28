@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.xst" -ofn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.syr" 
+netgen -intstyle ise -ar Structure -tm sevenSeg_hex_mux -w -dir netgen/synthesis -ofmt vhdl -sim sevenSeg_hex_mux.ngc sevenSeg_hex_mux_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg_Constraint.ucf -p xc3s500e-fg320-4 sevenSeg_hex_mux.ngc sevenSeg_hex_mux.ngd  
+xst -intstyle ise -ifn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.xst" -ofn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.syr" 
+netgen -intstyle ise -ar Structure -tm sevenSeg_hex_mux -w -dir netgen/synthesis -ofmt vhdl -sim sevenSeg_hex_mux.ngc sevenSeg_hex_mux_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg_Constraint.ucf -p xc3s500e-fg320-4 sevenSeg_hex_mux.ngc sevenSeg_hex_mux.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ngd sevenSeg_hex_mux.pcf 
+par -w -intstyle ise -ol high -t 1 sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ncd sevenSeg_hex_mux.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sevenSeg_hex_mux.twx sevenSeg_hex_mux.ncd -o sevenSeg_hex_mux.twr sevenSeg_hex_mux.pcf -ucf sevenSeg_Constraint.ucf 
+bitgen -intstyle ise -f sevenSeg_hex_mux.ut sevenSeg_hex_mux.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg_Constraint.ucf -p xc3s500e-fg320-4 sevenSeg_hex_mux.ngc sevenSeg_hex_mux.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ngd sevenSeg_hex_mux.pcf 
+par -w -intstyle ise -ol high -t 1 sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ncd sevenSeg_hex_mux.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sevenSeg_hex_mux.twx sevenSeg_hex_mux.ncd -o sevenSeg_hex_mux.twr sevenSeg_hex_mux.pcf -ucf sevenSeg_Constraint.ucf 
+bitgen -intstyle ise -f sevenSeg_hex_mux.ut sevenSeg_hex_mux.ncd 
+xst -intstyle ise -ifn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.xst" -ofn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.syr" 
+netgen -intstyle ise -ar Structure -tm sevenSeg_hex_mux -w -dir netgen/synthesis -ofmt vhdl -sim sevenSeg_hex_mux.ngc sevenSeg_hex_mux_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg_Constraint.ucf -p xc3s500e-fg320-4 sevenSeg_hex_mux.ngc sevenSeg_hex_mux.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ngd sevenSeg_hex_mux.pcf 
+par -w -intstyle ise -ol high -t 1 sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ncd sevenSeg_hex_mux.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sevenSeg_hex_mux.twx sevenSeg_hex_mux.ncd -o sevenSeg_hex_mux.twr sevenSeg_hex_mux.pcf -ucf sevenSeg_Constraint.ucf 
+bitgen -intstyle ise -f sevenSeg_hex_mux.ut sevenSeg_hex_mux.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg_Constraint.ucf -p xc3s500e-fg320-4 sevenSeg_hex_mux.ngc sevenSeg_hex_mux.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ngd sevenSeg_hex_mux.pcf 
+par -w -intstyle ise -ol high -t 1 sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ncd sevenSeg_hex_mux.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sevenSeg_hex_mux.twx sevenSeg_hex_mux.ncd -o sevenSeg_hex_mux.twr sevenSeg_hex_mux.pcf -ucf sevenSeg_Constraint.ucf 
+bitgen -intstyle ise -f sevenSeg_hex_mux.ut sevenSeg_hex_mux.ncd 
+xst -intstyle ise -ifn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.xst" -ofn "C:/Users/aula2.ELE/Desktop/Lab04_Vivi_Vini/sevenSeg_hex_mux.syr" 
+netgen -intstyle ise -ar Structure -tm sevenSeg_hex_mux -w -dir netgen/synthesis -ofmt vhdl -sim sevenSeg_hex_mux.ngc sevenSeg_hex_mux_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg_Constraint.ucf -p xc3s500e-fg320-4 sevenSeg_hex_mux.ngc sevenSeg_hex_mux.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sevenSeg_hex_mux_map.ncd sevenSeg_hex_mux.ngd sevenSeg_hex_mux.pcf 

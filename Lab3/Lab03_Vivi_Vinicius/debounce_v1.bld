@@ -1,0 +1,291 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc RotaryConstraint.ucf -p
+xc7a100t-csg324-3 debounce_v1.ngc debounce_v1.ngd
+
+Reading NGO file "C:/Users/aula2/Documents/CompDig Aula
+2/Lab03_Vivi_Vinicius/debounce_v1.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "RotaryConstraint.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "ROT_A" LOC = "K18" |>
+   [RotaryConstraint.ucf(1)]: NET "ROT_A" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ROT_A" LOC = "K18" |> [RotaryConstraint.ucf(1)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(1)]: NET "ROT_A" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <PULLUP ;> [RotaryConstraint.ucf(1)]: NET
+   "ROT_A" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ROT_B" LOC = "G18" |>
+   [RotaryConstraint.ucf(2)]: NET "ROT_B" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ROT_B" LOC = "G18" |> [RotaryConstraint.ucf(2)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(2)]: NET "ROT_B" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <PULLUP ;> [RotaryConstraint.ucf(2)]: NET
+   "ROT_B" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ROT_C" LOC = "V16" |>
+   [RotaryConstraint.ucf(3)]: NET "ROT_C" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ROT_C" LOC = "V16" |> [RotaryConstraint.ucf(3)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(3)]: NET "ROT_C" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <PULLDOWN ;> [RotaryConstraint.ucf(3)]:
+   NET "ROT_C" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<0>" LOC = "F12" |>
+   [RotaryConstraint.ucf(7)]: NET "leds<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<0>" LOC = "F12" |> [RotaryConstraint.ucf(7)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(7)]: NET "leds<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(7)]: NET "leds<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(7)]:
+   NET "leds<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<1>" LOC = "E12" |>
+   [RotaryConstraint.ucf(8)]: NET "leds<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<1>" LOC = "E12" |> [RotaryConstraint.ucf(8)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(8)]: NET "leds<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(8)]: NET "leds<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(8)]:
+   NET "leds<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<2>" LOC = "E11" |>
+   [RotaryConstraint.ucf(9)]: NET "leds<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<2>" LOC = "E11" |> [RotaryConstraint.ucf(9)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(9)]: NET "leds<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(9)]: NET "leds<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(9)]:
+   NET "leds<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<3>" LOC = "F11" |>
+   [RotaryConstraint.ucf(10)]: NET "leds<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<3>" LOC = "F11" |> [RotaryConstraint.ucf(10)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(10)]: NET "leds<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(10)]: NET "leds<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(10)]:
+   NET "leds<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<4>" LOC = "C11" |>
+   [RotaryConstraint.ucf(11)]: NET "leds<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<4>" LOC = "C11" |> [RotaryConstraint.ucf(11)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(11)]: NET "leds<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(11)]: NET "leds<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(11)]:
+   NET "leds<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<5>" LOC = "D11" |>
+   [RotaryConstraint.ucf(12)]: NET "leds<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<5>" LOC = "D11" |> [RotaryConstraint.ucf(12)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(12)]: NET "leds<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(12)]: NET "leds<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(12)]:
+   NET "leds<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<6>" LOC = "E9" |>
+   [RotaryConstraint.ucf(13)]: NET "leds<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<6>" LOC = "E9" |> [RotaryConstraint.ucf(13)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(13)]: NET "leds<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(13)]: NET "leds<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(13)]:
+   NET "leds<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "leds<7>" LOC = "F9" |>
+   [RotaryConstraint.ucf(14)]: NET "leds<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "leds<7>" LOC = "F9" |> [RotaryConstraint.ucf(14)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = LVTTL |>
+   [RotaryConstraint.ucf(14)]: NET "leds<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <SLEW = SLOW |>
+   [RotaryConstraint.ucf(14)]: NET "leds<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <DRIVE = 8 ;> [RotaryConstraint.ucf(14)]:
+   NET "leds<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem - The Period constraint <NET "CLK" PERIOD = 20.0ns HIGH
+   40%;> [RotaryConstraint.ucf(17)], is specified using the Net Period method
+   which is not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    41
+  Number of warnings:  11
+
+Total memory usage is 4463180 kilobytes
+
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "debounce_v1.bld"...

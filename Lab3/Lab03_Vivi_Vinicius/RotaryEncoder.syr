@@ -1,0 +1,447 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: RotaryEncoder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RotaryEncoder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RotaryEncoder"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : RotaryEncoder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/Debounce1_Vivi_Vinicius.vhd" in Library work.
+Architecture behavioral of Entity debounce_v1 is up to date.
+Compiling vhdl file "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd" in Library work.
+Entity <rotaryencoder> compiled.
+Entity <rotaryencoder> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RotaryEncoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce_v1> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RotaryEncoder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd" line 21: Unconnected output port 'tick' of component 'debounce_v1'.
+WARNING:Xst:753 - "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd" line 30: Unconnected output port 'tick' of component 'debounce_v1'.
+Entity <RotaryEncoder> analyzed. Unit <RotaryEncoder> generated.
+
+Analyzing Entity <debounce_v1> in library <work> (Architecture <Behavioral>).
+Entity <debounce_v1> analyzed. Unit <debounce_v1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debounce_v1>.
+    Related source file is "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/Debounce1_Vivi_Vinicius.vhd".
+    Found 20-bit up counter for signal <counter>.
+    Found 20-bit comparator less for signal <counter$cmp_lt0000> created at line 40.
+    Found 1-bit xor2 for signal <counter_set>.
+    Found 2-bit register for signal <dff>.
+    Found 1-bit register for signal <result>.
+    Found 1-bit register for signal <state<0>>.
+    Found 1-bit register for signal <tick_reg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <debounce_v1> synthesized.
+
+
+Synthesizing Unit <RotaryEncoder>.
+    Related source file is "C:/Users/aula2/Documents/CompDig Aula 2/Lab03_Vivi_Vinicius/RotaryEncoder.vhd".
+WARNING:Xst:647 - Input <rot_c> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 28                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <z_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   8 D-type flip-flop(s).
+Unit <RotaryEncoder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 20-bit up counter                                     : 2
+# Registers                                            : 11
+ 1-bit register                                        : 10
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 20-bit comparator less                                : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state_reg/FSM> on signal <state_reg[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 000
+ e1    | 001
+ e2    | 010
+ e3    | 110
+ s1    | 011
+ s2    | 111
+ s3    | 101
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 2
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Comparators                                          : 2
+ 20-bit comparator less                                : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RotaryEncoder> ...
+
+Optimizing unit <debounce_v1> ...
+WARNING:Xst:2677 - Node <u_debB/state_0> of sequential type is unconnected in block <RotaryEncoder>.
+WARNING:Xst:2677 - Node <u_debB/tick_reg> of sequential type is unconnected in block <RotaryEncoder>.
+WARNING:Xst:2677 - Node <u_debA/state_0> of sequential type is unconnected in block <RotaryEncoder>.
+WARNING:Xst:2677 - Node <u_debA/tick_reg> of sequential type is unconnected in block <RotaryEncoder>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RotaryEncoder, actual ratio is 0.
+FlipFlop u_debA/dff_1 has been replicated 1 time(s)
+FlipFlop u_debB/dff_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RotaryEncoder.ngr
+Top Level Output File Name         : RotaryEncoder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 178
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 4
+#      LUT2                        : 6
+#      LUT2_L                      : 1
+#      LUT3                        : 52
+#      LUT4                        : 11
+#      LUT4_D                      : 1
+#      MUXCY                       : 54
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 59
+#      FDC                         : 9
+#      FDCE                        : 48
+#      FDE                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       42  out of   4656     0%  
+ Number of Slice Flip Flops:             59  out of   9312     0%  
+ Number of 4 input LUTs:                 79  out of   9312     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 59    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 57    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.037ns (Maximum Frequency: 165.645MHz)
+   Minimum input arrival time before clock: 4.343ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.037ns (frequency: 165.645MHz)
+  Total number of paths / destination ports: 2175 / 107
+-------------------------------------------------------------------------
+Delay:               6.037ns (Levels of Logic = 10)
+  Source:            u_debB/counter_5 (FF)
+  Destination:       u_debB/counter_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u_debB/counter_5 to u_debB/counter_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  u_debB/counter_5 (u_debB/counter_5)
+     LUT1:I0->O            1   0.704   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<0>_rt (u_debB/Mcompar_counter_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<0> (u_debB/Mcompar_counter_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<1> (u_debB/Mcompar_counter_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<2> (u_debB/Mcompar_counter_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<3> (u_debB/Mcompar_counter_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<4> (u_debB/Mcompar_counter_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<5> (u_debB/Mcompar_counter_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  u_debB/Mcompar_counter_cmp_lt0000_cy<6> (u_debB/Mcompar_counter_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           2   0.459   0.482  u_debB/Mcompar_counter_cmp_lt0000_cy<7> (u_debB/Mcompar_counter_cmp_lt0000_cy<7>)
+     LUT3:I2->O           20   0.704   1.102  u_debB/counter_not00011 (u_debB/counter_not0001)
+     FDCE:CE                   0.555          u_debB/counter_0
+    ----------------------------------------
+    Total                      6.037ns (3.831ns logic, 2.206ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.343ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       u_debB/result (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to u_debB/result
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            59   1.218   1.446  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            1   0.704   0.420  u_debB/result_and00001 (u_debB/result_and0000)
+     FDE:CE                    0.555          u_debB/result
+    ----------------------------------------
+    Total                      4.343ns (2.477ns logic, 1.866ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            z_reg_7 (FF)
+  Destination:       leds<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: z_reg_7 to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  z_reg_7 (z_reg_7)
+     OBUF:I->O                 3.272          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.44 secs
+ 
+--> 
+
+Total memory usage is 4514564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

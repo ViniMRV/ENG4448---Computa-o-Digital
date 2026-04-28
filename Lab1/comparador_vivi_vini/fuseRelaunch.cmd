@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/aula2/Desktop/Nova pasta/comparador_vivi_vini/comparador_isim_beh.exe" -prj "C:/Users/aula2/Desktop/Nova pasta/comparador_vivi_vini/comparador_beh.prj" "work.comparador" 

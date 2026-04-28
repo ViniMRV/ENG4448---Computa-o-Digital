@@ -1,0 +1,29 @@
+NET "SW<0>" LOC = "L13" | IOSTANDARD = LVTTL | PULLUP ;
+NET "SW<1>" LOC = "L14" | IOSTANDARD = LVTTL | PULLUP ;
+NET "SW<2>" LOC = "H18" | IOSTANDARD = LVTTL | PULLUP ;
+NET "SW<3>" LOC = "N17" | IOSTANDARD = LVTTL | PULLUP ;
+
+# ==== 6-pin header J1 ====
+# These four connections are shared with the FX2 connector
+NET "SSEG<6>" LOC = "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "SSEG<5>" LOC = "E12" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "SSEG<4>" LOC = "A13" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "SSEG<3>" LOC = "A14" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+# ==== 6-pin header J2 ====
+# These four connections are shared with the FX2 connector
+NET "SSEG<2>" LOC = "C14" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "SSEG<1>" LOC = "A16" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "SSEG<0>" LOC = "E13" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+NET "an" LOC = "B11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6 ;
+
+NET "CLK" LOC = "C9" | IOSTANDARD = LVCMOS33 ;
+NET "CLK" PERIOD = 20.0ns HIGH 40%;
+
+# Reset mapeado para o botão direcional SUL (UG230 - Pág 22)
+NET "reset" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN ;
+
+# HEX1 mapeado para os botões restantes (UG230 - Pág 22)
+NET "hex1<0>" LOC = "V4"  | IOSTANDARD = LVTTL | PULLDOWN ; 
+NET "hex1<1>" LOC = "H13" | IOSTANDARD = LVTTL | PULLDOWN ; 
+NET "hex1<2>" LOC = "D18" | IOSTANDARD = LVTTL | PULLDOWN ; 
+NET "hex1<3>" LOC = "V16" | IOSTANDARD = LVTTL | PULLDOWN ; 

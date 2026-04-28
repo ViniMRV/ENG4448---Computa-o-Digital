@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\aula2\Documents\CompDig Aula 2\Lab03_Vivi_Vinicius\RotaryEncoder.ncd
+OUTFILE=C:\Users\aula2\Documents\CompDig Aula 2\Lab03_Vivi_Vinicius\RotaryEncoder.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\aula2\Documents\CompDig Aula 2\Lab03_Vivi_Vinicius
+LICENSE=WebPack
+USER_INFO=211165492_176193773_0_658
