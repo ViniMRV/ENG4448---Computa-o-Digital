@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart.vhd 2026/05/13.11:52:29 P.20131013
+EN work/uart 1778684099 \
+      FL C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart/Behavioral 1778684100 \
+      FL C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart.vhd \
+      EN work/uart 1778684099

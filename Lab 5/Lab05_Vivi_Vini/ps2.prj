@@ -1,0 +1,3 @@
+vhdl work "display7_converter.vhd"
+vhdl work "display7.vhd"
+vhdl work "ps2.vhd"

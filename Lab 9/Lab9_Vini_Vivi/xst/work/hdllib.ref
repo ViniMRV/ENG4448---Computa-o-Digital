@@ -1,0 +1,4 @@
+EN adc_control NULL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" sub00/vhpl01 1782157416
+AR adc_main behavioral "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" sub00/vhpl03 1782157419
+AR adc_control behavioral "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" sub00/vhpl02 1782157417
+EN adc_main NULL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" sub00/vhpl00 1782157418

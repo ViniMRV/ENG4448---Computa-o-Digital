@@ -1,0 +1,20 @@
+Release 14.7 - netgen P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm ADC_Main -w -dir
+netgen/synthesis -ofmt vhdl -sim ADC_Main.ngc ADC_Main_synthesis.vhd  
+
+Reading design 'ADC_Main.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\aula\Documents\Lab9\Lab9_Vini_Vivi\netgen\synthesis\ADC_Main_synthesis
+.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 4387688 kilobytes

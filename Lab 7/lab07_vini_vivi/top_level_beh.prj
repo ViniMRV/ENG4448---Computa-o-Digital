@@ -1,0 +1,3 @@
+vhdl work "lcd_write.vhd"
+vhdl work "lcd_init.vhd"
+vhdl work "top.vhd"

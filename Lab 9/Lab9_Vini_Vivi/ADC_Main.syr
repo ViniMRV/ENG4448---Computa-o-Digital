@@ -1,0 +1,459 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.68 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.68 secs
+ 
+--> Reading design: ADC_Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADC_Main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADC_Main"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : ADC_Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" in Library work.
+Entity <adc_control> compiled.
+Entity <adc_control> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" in Library work.
+Architecture behavioral of Entity adc_main is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ADC_Main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADC_Control> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ADC_Main> in library <work> (Architecture <behavioral>).
+Entity <ADC_Main> analyzed. Unit <ADC_Main> generated.
+
+Analyzing Entity <ADC_Control> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" line 135: Mux is complete : default of case is discarded
+Entity <ADC_Control> analyzed. Unit <ADC_Control> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ADC_Control>.
+    Related source file is "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd".
+WARNING:Xst:646 - Signal <shift_reg<33>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <amp_cmd> is used but never assigned. This sourceless signal will be automatically connected to value 00010001.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | spi_tick                  (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_init                                         |
+    | Power Up State     | s_init                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8x8-bit ROM for signal <leds$mux0000> created at line 127.
+    Found 1-bit register for signal <ad_conv>.
+    Found 1-bit register for signal <amp_cs>.
+    Found 8-bit register for signal <leds>.
+    Found 1-bit register for signal <mosi>.
+    Found 6-bit register for signal <bit_cnt>.
+    Found 6-bit adder for signal <bit_cnt$share0000> created at line 66.
+    Found 5-bit up counter for signal <clk_div_cnt>.
+    Found 1-bit register for signal <sck_reg>.
+    Found 34-bit register for signal <shift_reg>.
+    Found 1-bit register for signal <spi_tick>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ADC_Control> synthesized.
+
+
+Synthesizing Unit <ADC_Main>.
+    Related source file is "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd".
+Unit <ADC_Main> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 6-bit adder                                           : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 8
+ 1-bit register                                        : 5
+ 34-bit register                                       : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_ADC_Control/state/FSM> on signal <state[1:3]> with gray encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ s_init      | 000
+ s_amp_setup | 001
+ s_amp_wait  | 011
+ s_adc_conv  | 010
+ s_adc_read  | 110
+ s_update    | 111
+-------------------------
+WARNING:Xst:2677 - Node <shift_reg_31> of sequential type is unconnected in block <Inst_ADC_Control>.
+WARNING:Xst:2677 - Node <shift_reg_32> of sequential type is unconnected in block <Inst_ADC_Control>.
+WARNING:Xst:2677 - Node <shift_reg_33> of sequential type is unconnected in block <Inst_ADC_Control>.
+WARNING:Xst:2677 - Node <shift_reg_31> of sequential type is unconnected in block <ADC_Control>.
+WARNING:Xst:2677 - Node <shift_reg_32> of sequential type is unconnected in block <ADC_Control>.
+WARNING:Xst:2677 - Node <shift_reg_33> of sequential type is unconnected in block <ADC_Control>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 8x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 1
+ 6-bit adder                                           : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ADC_Main> ...
+
+Optimizing unit <ADC_Control> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ADC_Main, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <ADC_Main> :
+	Found 29-bit shift register for signal <Inst_ADC_Control/shift_reg_28>.
+Unit <ADC_Main> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+# Shift Registers                                      : 1
+ 29-bit shift register                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ADC_Main.ngr
+Top Level Output File Name         : ADC_Main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 65
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 11
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 11
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 27
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXF5                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 59
+#      FDCE                        : 51
+#      FDE                         : 1
+#      FDPE                        : 1
+#      FDR                         : 6
+# Shift Registers                  : 2
+#      SRL16E                      : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       46  out of   4656     0%  
+ Number of Slice Flip Flops:             59  out of   9312     0%  
+ Number of 4 input LUTs:                 64  out of   9312     0%  
+    Number used as logic:                62
+    Number used as Shift registers:       2
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    232     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 61    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 52    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.174ns (Maximum Frequency: 139.392MHz)
+   Minimum input arrival time before clock: 2.059ns
+   Maximum output required time after clock: 4.796ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.174ns (frequency: 139.392MHz)
+  Total number of paths / destination ports: 624 / 118
+-------------------------------------------------------------------------
+Delay:               7.174ns (Levels of Logic = 5)
+  Source:            Inst_ADC_Control/bit_cnt_1 (FF)
+  Destination:       Inst_ADC_Control/bit_cnt_5 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Inst_ADC_Control/bit_cnt_1 to Inst_ADC_Control/bit_cnt_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   0.968  Inst_ADC_Control/bit_cnt_1 (Inst_ADC_Control/bit_cnt_1)
+     LUT3_L:I2->LO         1   0.704   0.104  Inst_ADC_Control/state_cmp_eq0000_SW0 (N25)
+     LUT4:I3->O            5   0.704   0.637  Inst_ADC_Control/state_cmp_eq0000 (Inst_ADC_Control/state_cmp_eq0000)
+     LUT4:I3->O            1   0.704   0.455  Inst_ADC_Control/bit_cnt_mux0001<0>120 (Inst_ADC_Control/bit_cnt_mux0001<0>120)
+     LUT3_D:I2->O          4   0.704   0.591  Inst_ADC_Control/bit_cnt_mux0001<0>164 (Inst_ADC_Control/N01)
+     LUT4:I3->O            1   0.704   0.000  Inst_ADC_Control/bit_cnt_mux0001<2>1 (Inst_ADC_Control/bit_cnt_mux0001<2>)
+     FDCE:D                    0.308          Inst_ADC_Control/bit_cnt_3
+    ----------------------------------------
+    Total                      7.174ns (4.419ns logic, 2.755ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.059ns (Levels of Logic = 1)
+  Source:            SPI_MISO (PAD)
+  Destination:       Inst_ADC_Control/Mshreg_shift_reg_28_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SPI_MISO to Inst_ADC_Control/Mshreg_shift_reg_28_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  SPI_MISO_IBUF (SPI_MISO_IBUF)
+     SRLC16E:D                 0.421          Inst_ADC_Control/Mshreg_shift_reg_28_0
+    ----------------------------------------
+    Total                      2.059ns (1.639ns logic, 0.420ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.796ns (Levels of Logic = 1)
+  Source:            Inst_ADC_Control/sck_reg (FF)
+  Destination:       SPI_SCK (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Inst_ADC_Control/sck_reg to SPI_SCK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.591   0.933  Inst_ADC_Control/sck_reg (Inst_ADC_Control/sck_reg)
+     OBUF:I->O                 3.272          SPI_SCK_OBUF (SPI_SCK)
+    ----------------------------------------
+    Total                      4.796ns (3.863ns logic, 0.933ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.36 secs
+ 
+--> 
+
+Total memory usage is 4514564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

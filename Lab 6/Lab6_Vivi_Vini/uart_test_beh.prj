@@ -1,0 +1,2 @@
+vhdl work "uart.vhd"
+vhdl work "uart_test.vhd"

@@ -1,0 +1,3 @@
+vhdl isim_temp "lcd_write.vhd"
+vhdl isim_temp "lcd_init.vhd"
+vhdl isim_temp "top.vhd"

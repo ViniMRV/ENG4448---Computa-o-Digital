@@ -1,0 +1,6 @@
+PH display7_converter NULL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7_converter.vhd sub00/vhpl00 1778073330
+AR sevenseg_hex_mux behavioral C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7.vhd sub00/vhpl03 1778073333
+EN sevenseg_hex_mux NULL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7.vhd sub00/vhpl02 1778073332
+AR ps2 behavioral C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/ps2.vhd sub00/vhpl05 1778073335
+EN ps2 NULL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/ps2.vhd sub00/vhpl04 1778073334
+PB display7_converter display7_converter C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7_converter.vhd sub00/vhpl01 1778073331

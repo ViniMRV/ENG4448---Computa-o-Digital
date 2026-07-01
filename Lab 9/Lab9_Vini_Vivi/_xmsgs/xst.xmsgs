@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd</arg>&quot; line <arg fmt="%d" index="2">135</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">shift_reg&lt;33&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">amp_cmd</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00010001</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_reg_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_ADC_Control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">shift_reg_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_ADC_Control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">shift_reg_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Inst_ADC_Control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">shift_reg_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_Control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">shift_reg_32</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_Control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">shift_reg_33</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_Control</arg>&gt;.
+</msg>
+
+</messages>
+

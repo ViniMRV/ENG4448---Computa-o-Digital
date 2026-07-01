@@ -1,0 +1,32 @@
+# ==========================================================================
+# Clock de 50 MHz da Spartan-3E
+# ==========================================================================
+NET "CLK" LOC = "C9" | IOSTANDARD = LVCMOS33;
+NET "CLK" PERIOD = 20.0ns HIGH 40%;
+
+# ==========================================================================
+# Reset (Mapeado para a chave SW0)
+# ==========================================================================
+NET "RESET" LOC = "L13" | IOSTANDARD = LVTTL | PULLUP;
+
+# ==========================================================================
+# Pinos de Controlo do Display LCD
+# ==========================================================================
+NET "LCD_E"  LOC = "M18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "LCD_RS" LOC = "L18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "LCD_RW" LOC = "L17" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+
+# ==========================================================================
+# Barramento de Dados Partilhado (Display LCD em Modo 4-bits)
+# ==========================================================================
+NET "SF_D<8>"  LOC = "R15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "SF_D<9>"  LOC = "R16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "SF_D<10>" LOC = "P17" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "SF_D<11>" LOC = "M15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+
+# ==========================================================================
+# Pino de Desativação da Memória StrataFlash
+# ==========================================================================
+# Este pino DEVE estar em nível alto ('1') no seu código VHDL para 
+# garantir que a Flash não entra em conflito com o barramento de dados do LCD.
+NET "SF_CE0" LOC = "D16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;

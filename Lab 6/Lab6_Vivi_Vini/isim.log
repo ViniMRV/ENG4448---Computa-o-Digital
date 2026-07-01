@@ -1,0 +1,787 @@
+ISim log file
+Running: C:\Users\aula2.ELE\Desktop\Lab6_Vivi_Vini\Lab6_Vivi_Vini\uart_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart_test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 400us
+# run 400us
+# run 400us
+# run 400us
+
+** Failure:Fim da simulação
+User(VHDL) Code Called Simulation Stop
+In process uart_test.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# run 400us
+INFO: Simulator is stopped.
+# step
+INFO: Simulator is stopped.
+# step
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 400us
+# run 800us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 800us
+# restart
+# run 800us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 800us
+at 100 us: Note: START BIT (/uart_test/).
+at 108680600 ps: Note: BIT 0 (/uart_test/).
+at 117361200 ps: Note: BIT 1 (/uart_test/).
+at 126041800 ps: Note: BIT 2 (/uart_test/).
+at 134722400 ps: Note: BIT 3 (/uart_test/).
+at 143403 ns: Note: BIT 4 (/uart_test/).
+at 152083600 ps: Note: BIT 5 (/uart_test/).
+at 160764200 ps: Note: BIT 6 (/uart_test/).
+at 169444800 ps: Note: BIT 7 (/uart_test/).
+at 178125400 ps: Note: STOP BIT (/uart_test/).
+at 195486600 ps: Note: START BIT (/uart_test/).
+at 204167200 ps: Note: BIT 0 (/uart_test/).
+at 212847800 ps: Note: BIT 1 (/uart_test/).
+at 221528400 ps: Note: BIT 2 (/uart_test/).
+at 230209 ns: Note: BIT 3 (/uart_test/).
+at 238889600 ps: Note: BIT 4 (/uart_test/).
+at 247570200 ps: Note: BIT 5 (/uart_test/).
+at 256250800 ps: Note: BIT 6 (/uart_test/).
+at 264931400 ps: Note: BIT 7 (/uart_test/).
+at 273612 ns: Note: STOP BIT (/uart_test/).
+at 290973200 ps: Note: START BIT (/uart_test/).
+at 299653800 ps: Note: BIT 0 (/uart_test/).
+at 308334400 ps: Note: BIT 1 (/uart_test/).
+at 317015 ns: Note: BIT 2 (/uart_test/).
+at 325695600 ps: Note: BIT 3 (/uart_test/).
+at 334376200 ps: Note: BIT 4 (/uart_test/).
+at 343056800 ps: Note: BIT 5 (/uart_test/).
+at 351737400 ps: Note: BIT 6 (/uart_test/).
+at 360418 ns: Note: BIT 7 (/uart_test/).
+at 369098600 ps: Note: STOP BIT (/uart_test/).
+at 386459800 ps: Note: START BIT (/uart_test/).
+at 395140400 ps: Note: BIT 0 (/uart_test/).
+at 403821 ns: Note: BIT 1 (/uart_test/).
+at 412501600 ps: Note: BIT 2 (/uart_test/).
+at 421182200 ps: Note: BIT 3 (/uart_test/).
+at 429862800 ps: Note: BIT 4 (/uart_test/).
+at 438543400 ps: Note: BIT 5 (/uart_test/).
+at 447224 ns: Note: BIT 6 (/uart_test/).
+at 455904600 ps: Note: BIT 7 (/uart_test/).
+at 464585200 ps: Note: STOP BIT (/uart_test/).
+at 481946400 ps: Note: START BIT (/uart_test/).
+at 490627 ns: Note: BIT 0 (/uart_test/).
+at 499307600 ps: Note: BIT 1 (/uart_test/).
+at 507988200 ps: Note: BIT 2 (/uart_test/).
+at 516668800 ps: Note: BIT 3 (/uart_test/).
+at 525349400 ps: Note: BIT 4 (/uart_test/).
+at 534030 ns: Note: BIT 5 (/uart_test/).
+at 542710600 ps: Note: BIT 6 (/uart_test/).
+at 551391200 ps: Note: BIT 7 (/uart_test/).
+at 560071800 ps: Note: STOP BIT (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 800us
+at 100 us: Note: START BIT (/uart_test/).
+at 108680600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 117361200 ps: Note: BIT 1 = '0' (/uart_test/).
+at 126041800 ps: Note: BIT 2 = '0' (/uart_test/).
+at 134722400 ps: Note: BIT 3 = '0' (/uart_test/).
+at 143403 ns: Note: BIT 4 = '0' (/uart_test/).
+at 152083600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 160764200 ps: Note: BIT 6 = '0' (/uart_test/).
+at 169444800 ps: Note: BIT 7 = '0' (/uart_test/).
+at 178125400 ps: Note: STOP BIT (/uart_test/).
+at 195486600 ps: Note: START BIT (/uart_test/).
+at 204167200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 212847800 ps: Note: BIT 1 = '1' (/uart_test/).
+at 221528400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 230209 ns: Note: BIT 3 = '0' (/uart_test/).
+at 238889600 ps: Note: BIT 4 = '1' (/uart_test/).
+at 247570200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 256250800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 264931400 ps: Note: BIT 7 = '0' (/uart_test/).
+at 273612 ns: Note: STOP BIT (/uart_test/).
+at 290973200 ps: Note: START BIT (/uart_test/).
+at 299653800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 308334400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 317015 ns: Note: BIT 2 = '0' (/uart_test/).
+at 325695600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 334376200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 343056800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 351737400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 360418 ns: Note: BIT 7 = '0' (/uart_test/).
+at 369098600 ps: Note: STOP BIT (/uart_test/).
+at 386459800 ps: Note: START BIT (/uart_test/).
+at 395140400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 403821 ns: Note: BIT 1 = '0' (/uart_test/).
+at 412501600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 421182200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 429862800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 438543400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 447224 ns: Note: BIT 6 = '1' (/uart_test/).
+at 455904600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 464585200 ps: Note: STOP BIT (/uart_test/).
+at 481946400 ps: Note: START BIT (/uart_test/).
+at 490627 ns: Note: BIT 0 = '0' (/uart_test/).
+at 499307600 ps: Note: BIT 1 = '0' (/uart_test/).
+at 507988200 ps: Note: BIT 2 = '1' (/uart_test/).
+at 516668800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 525349400 ps: Note: BIT 4 = '0' (/uart_test/).
+at 534030 ns: Note: BIT 5 = '0' (/uart_test/).
+at 542710600 ps: Note: BIT 6 = '1' (/uart_test/).
+at 551391200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 560071800 ps: Note: STOP BIT (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 800us
+at 100020 ns: Note: START BIT (/uart_test/).
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+at 508088200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 516768800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 525449400 ps: Note: BIT 3 = '1' (/uart_test/).
+at 534130 ns: Note: BIT 2 = '0' (/uart_test/).
+at 542810600 ps: Note: BIT 1 = '1' (/uart_test/).
+at 551491200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 560171800 ps: Note: STOP BIT (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 800us
+at 100020 ns: Note: START BIT (/uart_test/).
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+at 508088200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 516768800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 525449400 ps: Note: BIT 3 = '1' (/uart_test/).
+at 534130 ns: Note: BIT 2 = '0' (/uart_test/).
+at 542810600 ps: Note: BIT 1 = '1' (/uart_test/).
+at 551491200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 560171800 ps: Note: STOP BIT (/uart_test/).
+# restart
+# run 100us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# step
+Stopped at time : 100010 ns : File "C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart_test.vhd" Line 73
+# step
+Stopped at time : 100010 ns : File "C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart_test.vhd" Line 71
+# step
+Stopped at time : 100010 ns : File "C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart_test.vhd" Line 72
+# step
+Stopped at time : 100020 ns : File "C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/uart_test.vhd" Line 87
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+# run 100us
+at 508088200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 516768800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 525449400 ps: Note: BIT 3 = '1' (/uart_test/).
+at 534130 ns: Note: BIT 2 = '0' (/uart_test/).
+at 542810600 ps: Note: BIT 1 = '1' (/uart_test/).
+at 551491200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 560171800 ps: Note: STOP BIT (/uart_test/).
+# run 100us
+# run 100us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 134742400 ps: Note: BIT 3 = '0' (/uart_test/).
+at 143423 ns: Note: BIT 4 = '1' (/uart_test/).
+at 152103600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 160784200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 7 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 221568400 ps: Note: BIT 2 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 3 = '1' (/uart_test/).
+at 238929600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 247610200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 264971400 ps: Note: BIT 7 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 0 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 317075 ns: Note: BIT 2 = '1' (/uart_test/).
+at 325755600 ps: Note: BIT 3 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 351797400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 360478 ns: Note: BIT 7 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 0 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 1 = '0' (/uart_test/).
+at 412581600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 421262200 ps: Note: BIT 3 = '1' (/uart_test/).
+at 429942800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 438623400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 447304 ns: Note: BIT 6 = '1' (/uart_test/).
+at 455984600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 0 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 1 = '1' (/uart_test/).
+# run 100us
+at 508088200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 516768800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 525449400 ps: Note: BIT 4 = '0' (/uart_test/).
+at 534130 ns: Note: BIT 5 = '0' (/uart_test/).
+at 542810600 ps: Note: BIT 6 = '0' (/uart_test/).
+at 551491200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 560171800 ps: Note: STOP BIT (/uart_test/).
+# run 100us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+# run 100us
+at 508088200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 516768800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 525449400 ps: Note: BIT 3 = '1' (/uart_test/).
+at 534130 ns: Note: BIT 2 = '0' (/uart_test/).
+at 542810600 ps: Note: BIT 1 = '1' (/uart_test/).
+at 551491200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 560171800 ps: Note: STOP BIT (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+# run 100us
+at 508088200 ps: Note: BIT 5 = '0' (/uart_test/).
+at 516768800 ps: Note: BIT 4 = '0' (/uart_test/).
+at 525449400 ps: Note: BIT 3 = '1' (/uart_test/).
+at 534130 ns: Note: BIT 2 = '0' (/uart_test/).
+at 542810600 ps: Note: BIT 1 = '1' (/uart_test/).
+at 551491200 ps: Note: BIT 0 = '0' (/uart_test/).
+at 560171800 ps: Note: STOP BIT (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100us
+at 100020 ns: Note: START BIT (/uart_test/).
+# run 100us
+at 108700600 ps: Note: BIT 7 = '0' (/uart_test/).
+at 117381200 ps: Note: BIT 6 = '1' (/uart_test/).
+at 126061800 ps: Note: BIT 5 = '0' (/uart_test/).
+at 134742400 ps: Note: BIT 4 = '1' (/uart_test/).
+at 143423 ns: Note: BIT 3 = '0' (/uart_test/).
+at 152103600 ps: Note: BIT 2 = '1' (/uart_test/).
+at 160784200 ps: Note: BIT 1 = '1' (/uart_test/).
+at 169464800 ps: Note: BIT 0 = '0' (/uart_test/).
+at 178145400 ps: Note: STOP BIT (/uart_test/).
+at 195526600 ps: Note: START BIT (/uart_test/).
+# run 100us
+at 204207200 ps: Note: BIT 7 = '0' (/uart_test/).
+at 212887800 ps: Note: BIT 6 = '1' (/uart_test/).
+at 221568400 ps: Note: BIT 5 = '0' (/uart_test/).
+at 230249 ns: Note: BIT 4 = '0' (/uart_test/).
+at 238929600 ps: Note: BIT 3 = '1' (/uart_test/).
+at 247610200 ps: Note: BIT 2 = '0' (/uart_test/).
+at 256290800 ps: Note: BIT 1 = '0' (/uart_test/).
+at 264971400 ps: Note: BIT 0 = '0' (/uart_test/).
+at 273652 ns: Note: STOP BIT (/uart_test/).
+at 291033200 ps: Note: START BIT (/uart_test/).
+at 299713800 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 308394400 ps: Note: BIT 6 = '1' (/uart_test/).
+at 317075 ns: Note: BIT 5 = '0' (/uart_test/).
+at 325755600 ps: Note: BIT 4 = '0' (/uart_test/).
+at 334436200 ps: Note: BIT 3 = '0' (/uart_test/).
+at 343116800 ps: Note: BIT 2 = '1' (/uart_test/).
+at 351797400 ps: Note: BIT 1 = '0' (/uart_test/).
+at 360478 ns: Note: BIT 0 = '0' (/uart_test/).
+at 369158600 ps: Note: STOP BIT (/uart_test/).
+at 386539800 ps: Note: START BIT (/uart_test/).
+at 395220400 ps: Note: BIT 7 = '0' (/uart_test/).
+# run 100us
+at 403901 ns: Note: BIT 6 = '1' (/uart_test/).
+at 412581600 ps: Note: BIT 5 = '0' (/uart_test/).
+at 421262200 ps: Note: BIT 4 = '0' (/uart_test/).
+at 429942800 ps: Note: BIT 3 = '1' (/uart_test/).
+at 438623400 ps: Note: BIT 2 = '1' (/uart_test/).
+at 447304 ns: Note: BIT 1 = '0' (/uart_test/).
+at 455984600 ps: Note: BIT 0 = '0' (/uart_test/).
+at 464665200 ps: Note: STOP BIT (/uart_test/).
+at 482046400 ps: Note: START BIT (/uart_test/).
+at 490727 ns: Note: BIT 7 = '0' (/uart_test/).
+at 499407600 ps: Note: BIT 6 = '0' (/uart_test/).

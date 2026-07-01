@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/aula2.ELE/Desktop/Lab6_Vivi_Vini/Lab6_Vivi_Vini/xst"
+elaborate
+-ifn uart.prj
+-ifmt mixed

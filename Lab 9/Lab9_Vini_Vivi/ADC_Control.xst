@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/aula/Documents/Lab9/Lab9_Vini_Vivi/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/aula/Documents/Lab9/Lab9_Vini_Vivi/xst"
+elaborate
+-ifn ADC_Control.prj
+-ifmt mixed

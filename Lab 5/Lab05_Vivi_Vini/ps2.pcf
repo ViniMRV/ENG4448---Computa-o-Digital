@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 06 10:15:40 2026
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "PS2_DATA" LOCATE = SITE "G13" LEVEL 1;
+COMP "PS2_CLK" LOCATE = SITE "G14" LEVEL 1;
+PIN PS2_CLK_pin<0> = BEL "PS2_CLK" PINNAME PAD;
+PIN "PS2_CLK_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "led_erro" LOCATE = SITE "F12" LEVEL 1;
+COMP "sseg<0>" LOCATE = SITE "E7" LEVEL 1;
+COMP "sseg<1>" LOCATE = SITE "B6" LEVEL 1;
+COMP "sseg<2>" LOCATE = SITE "A6" LEVEL 1;
+COMP "sseg<3>" LOCATE = SITE "C5" LEVEL 1;
+COMP "sseg<4>" LOCATE = SITE "D5" LEVEL 1;
+COMP "sseg<5>" LOCATE = SITE "A4" LEVEL 1;
+COMP "sseg<6>" LOCATE = SITE "B4" LEVEL 1;
+COMP "sel" LOCATE = SITE "F7" LEVEL 1;
+COMP "reset" LOCATE = SITE "K17" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "PS2_CLK_BUFGP/IBUFG" BEL "PS2_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+SCHEMATIC END;
+

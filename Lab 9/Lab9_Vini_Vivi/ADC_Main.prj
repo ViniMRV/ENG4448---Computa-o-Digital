@@ -1,0 +1,2 @@
+vhdl work "ADC_Control.vhd"
+vhdl work "ADC_Main.vhd"

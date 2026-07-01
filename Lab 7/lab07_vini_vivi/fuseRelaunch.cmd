@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/top_level_isim_beh.exe" -prj "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/top_level_beh.prj" "work.top_level" 

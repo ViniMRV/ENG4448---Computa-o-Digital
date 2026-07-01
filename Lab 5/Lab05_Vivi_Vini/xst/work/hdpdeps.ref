@@ -1,0 +1,26 @@
+V3 12
+FL C:/Users/aula2.ELE/Desktop/Lab05_Vivi_Vini/display7.vhd 2026/04/15.09:51:29 P.20131013
+FL C:/Users/aula2.ELE/Desktop/Lab05_Vivi_Vini/display7_converter.vhd 2026/04/15.09:50:10 P.20131013
+FL C:/Users/aula2.ELE/Desktop/Lab05_Vivi_Vini/ps2.vhd 2026/04/27.10:21:33 P.20131013
+FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7.vhd 2026/04/15.05:51:28 P.20131013
+EN work/sevenSeg_hex_mux 1778073332 \
+      FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/display7_converter 1778073331
+AR work/sevenSeg_hex_mux/Behavioral 1778073333 \
+      FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7.vhd \
+      EN work/sevenSeg_hex_mux 1778073332
+FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7_converter.vhd 2026/04/15.05:50:10 P.20131013
+PH work/display7_converter 1778073330 \
+      FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7_converter.vhd \
+      PB ieee/std_logic_1164 1381692176
+PB work/display7_converter 1778073331 \
+      FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/display7_converter.vhd \
+      PH work/display7_converter 1778073330
+FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/ps2.vhd 2026/05/06.10:15:28 P.20131013
+EN work/ps2 1778073334 \
+      FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/ps2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ps2/Behavioral 1778073335 \
+      FL C:/Users/aula2.ELE/Desktop/vinivivi/Lab5/Lab05_Vivi_Vini/ps2.vhd \
+      EN work/ps2 1778073334 AR work/sevenSeg_hex_mux/Behavioral 1778073333

@@ -1,0 +1,19 @@
+V3 11
+FL C:/Users/aula/Documents/Lab9/Lab9_Vini_Vivi/ADC_Control.vhd 2026/06/01.10:00:56 P.20131013
+FL C:/Users/aula/Documents/Lab9/Lab9_Vini_Vivi/ADC_Main.vhd 2026/06/01.09:58:30 P.20131013
+FL "C:/Users/aula/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" 2026/06/10.09:31:16 P.20131013
+FL "C:/Users/aula/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" 2026/06/01.05:58:30 P.20131013
+FL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" 2026/06/22.16:43:30 P.20131013
+EN work/ADC_Control 1782157416 \
+      FL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ADC_Control/Behavioral 1782157417 \
+      FL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Control.vhd" \
+      EN work/ADC_Control 1782157416
+FL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" 2026/06/10.05:33:56 P.20131013
+EN work/ADC_Main 1782157418 \
+      FL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ADC_Main/Behavioral 1782157419 \
+      FL "C:/Users/aula2.ELE/Documents/Nova pasta/Lab9_Vini_Vivi/ADC_Main.vhd" \
+      EN work/ADC_Main 1782157418 CP work/ADC_Control

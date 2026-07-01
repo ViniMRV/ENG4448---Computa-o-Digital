@@ -1,0 +1,6 @@
+AR top_level behavioral "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/top.vhd" sub00/vhpl05 1779884505
+AR lcd_init behavioral "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/lcd_init.vhd" sub00/vhpl01 1779884501
+AR lcd_write behavioral "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/lcd_write.vhd" sub00/vhpl03 1779884503
+EN lcd_init NULL "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/lcd_init.vhd" sub00/vhpl00 1779884500
+EN lcd_write NULL "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/lcd_write.vhd" sub00/vhpl02 1779884502
+EN top_level NULL "C:/Users/aula2.ELE/Documents/Nova pasta/lab07_vini_vivi/top.vhd" sub00/vhpl04 1779884504
