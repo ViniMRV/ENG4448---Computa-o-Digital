@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/TEMP/novo_teste/DataPath_tb_isim_beh.exe" -prj "C:/TEMP/novo_teste/DataPath_tb_beh.prj" "work.DataPath_tb" 

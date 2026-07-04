@@ -1,0 +1,65 @@
+V3 46
+FL C:/TEMP/novo_teste/ACCUM.vhd 2025/12/11.09:57:52 P.20131013
+EN work/ACCUM 1765471542 FL C:/TEMP/novo_teste/ACCUM.vhd PB ieee/std_logic_1164 1381692176
+AR work/ACCUM/Behavioral 1765471543 \
+      FL C:/TEMP/novo_teste/ACCUM.vhd EN work/ACCUM 1765471542
+FL C:/TEMP/novo_teste/ALU.vhd 2025/12/11.10:12:40 P.20131013
+EN work/ALU 1765471544 FL C:/TEMP/novo_teste/ALU.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PB work/libcpu 1765471530
+AR work/ALU/behavioral 1765471545 \
+      FL C:/TEMP/novo_teste/ALU.vhd EN work/ALU 1765471544
+FL C:/TEMP/novo_teste/CU.vhd 2025/12/11.10:00:29 P.20131013
+EN work/ControlUnit 1765471536 FL C:/TEMP/novo_teste/CU.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PB work/libcpu 1765471530
+AR work/ControlUnit/Behavioral 1765471537 \
+      FL C:/TEMP/novo_teste/CU.vhd EN work/ControlUnit 1765471536
+FL C:/TEMP/novo_teste/DataPath.vhd 2025/12/11.13:22:42 P.20131013
+EN work/DataPath 1765471550 FL C:/TEMP/novo_teste/DataPath.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/libcpu 1765471530
+AR work/DataPath/Structural 1765471551 \
+      FL C:/TEMP/novo_teste/DataPath.vhd EN work/DataPath 1765471550 \
+      CP ControlUnit CP IMEM CP RU CP ACCUM CP ALU CP FLAGS CP DMEM
+FL C:/TEMP/novo_teste/DMEM.vhd 2025/12/11.13:45:26 P.20131013
+EN work/DMEM 1765471548 FL C:/TEMP/novo_teste/DMEM.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PH work/unittest 1765471528 PB work/libcpu 1765471530 \
+      PH work/ps2_ssd 1765471531
+AR work/DMEM/Behavioral 1765471549 \
+      FL C:/TEMP/novo_teste/DMEM.vhd EN work/DMEM 1765471548 CP ps2_reader \
+      CP ssd_write
+FL C:/TEMP/novo_teste/FLAGS.vhd 2025/12/11.10:01:14 P.20131013
+EN work/FLAGS 1765471546 FL C:/TEMP/novo_teste/FLAGS.vhd PB ieee/std_logic_1164 1381692176
+AR work/FLAGS/Behavioral 1765471547 \
+      FL C:/TEMP/novo_teste/FLAGS.vhd EN work/FLAGS 1765471546
+FL C:/TEMP/novo_teste/IMEM.vhd 2025/12/11.13:45:17 P.20131013
+EN work/IMEM 1765471538 FL C:/TEMP/novo_teste/IMEM.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 PH work/unittest 1765471528 PB work/libcpu 1765471530 \
+      PH work/ps2_ssd 1765471531
+AR work/IMEM/Behavioral 1765471539 \
+      FL C:/TEMP/novo_teste/IMEM.vhd EN work/IMEM 1765471538
+FL C:/TEMP/novo_teste/libcpu.vhd 2025/12/08.05:00:52 P.20131013
+PH work/libcpu 1765471529 FL C:/TEMP/novo_teste/libcpu.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+PB work/libcpu 1765471530 \
+      FL C:/TEMP/novo_teste/libcpu.vhd PH work/libcpu 1765471529
+FL C:/TEMP/novo_teste/ps2_reader.vhd 2025/12/11.12:32:33 P.20131013
+EN work/ps2_reader 1765471532 FL C:/TEMP/novo_teste/ps2_reader.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ps2_reader/Behavioral 1765471533 \
+      FL C:/TEMP/novo_teste/ps2_reader.vhd EN work/ps2_reader 1765471532
+FL C:/TEMP/novo_teste/ps2_ssd.vhd 2025/12/11.13:43:38 P.20131013
+PH work/ps2_ssd 1765471531 FL C:/TEMP/novo_teste/ps2_ssd.vhd \
+      PB ieee/std_logic_1164 1381692176
+FL C:/TEMP/novo_teste/RU.vhd 2025/12/11.10:02:08 P.20131013
+EN work/RU 1765471540 FL C:/TEMP/novo_teste/RU.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/RU/behavioral 1765471541 \
+      FL C:/TEMP/novo_teste/RU.vhd EN work/RU 1765471540
+FL C:/TEMP/novo_teste/sdd_write.vhd 2025/12/11.12:56:13 P.20131013
+EN work/ssd_write 1765471534 FL C:/TEMP/novo_teste/sdd_write.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ssd_write/Behavioral 1765471535 \
+      FL C:/TEMP/novo_teste/sdd_write.vhd EN work/ssd_write 1765471534
+FL C:/TEMP/novo_teste/unittest.vhd 2025/12/11.13:37:45 P.20131013
+PH work/unittest 1765471528 FL C:/TEMP/novo_teste/unittest.vhd \
+      PB ieee/std_logic_1164 1381692176
