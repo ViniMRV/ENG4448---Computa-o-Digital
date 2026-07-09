@@ -1,0 +1,45 @@
+# =========================================================
+# CLOCK & RESET
+# =========================================================
+# Clock principal de 50 MHz da placa
+NET "clk" LOC = "C9" | IOSTANDARD = LVCMOS33;
+
+# Chave SW0 designada para o Reset
+NET "reset" LOC = "L13" | IOSTANDARD = LVTTL | PULLUP;
+
+
+# =========================================================
+# LEDs DISCRETOS (ALU FLAGS & CLOCK LENTO)
+# =========================================================
+# led_clock    -> LED7 (O LED mais a esquerda)
+# led_equal    -> LED6
+# led_greater  -> LED5
+# led_smaller  -> LED4
+# led_zero     -> LED3
+# led_overflow -> LED2
+NET "led_clock"    LOC = "F9"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "led_equal"    LOC = "E9"  | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "led_greater"  LOC = "D11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "led_smaller"  LOC = "C11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "led_zero"     LOC = "F11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+NET "led_overflow" LOC = "E11" | IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 8;
+
+
+# =========================================================
+# DISPLAY LCD (Sinais de Controle)
+# =========================================================
+NET "lcd_rs" LOC = "L18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "lcd_rw" LOC = "L17" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "lcd_en" LOC = "M18" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+
+
+# =========================================================
+# DISPLAY LCD (Barramento de Dados)
+# =========================================================
+
+NET "SF_D<8>"  LOC = "R15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "SF_D<9>"  LOC = "R16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "SF_D<10>" LOC = "P17" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+NET "SF_D<11>" LOC = "M15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
+
+NET "SF_CE0" LOC = "D16" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;

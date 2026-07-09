@@ -1,0 +1,28 @@
+V3 19
+FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/alu.vhd 2026/07/06.12:59:52 P.20131013
+EN work/ALU 1783516497 FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/alu.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ALU/Behavioral 1783516498 \
+      FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/alu.vhd EN work/ALU 1783516497
+FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/cpu.vhd 2026/07/06.13:29:06 P.20131013
+EN work/CPU 1783516499 FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/cpu.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/CPU/Behavioral 1783516500 \
+      FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/cpu.vhd EN work/CPU 1783516499 \
+      CP work/ALU
+FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/lcd.vhd 2026/07/08.10:14:53 P.20131013
+EN work/lcd 1783516503 FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/lcd.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/lcd/Behavioral 1783516504 \
+      FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/lcd.vhd EN work/lcd 1783516503
+FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/main.vhd 2026/07/06.15:47:04 P.20131013
+EN work/main 1783516505 FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/main.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/main/Behavioral 1783516506 \
+      FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/main.vhd EN work/main 1783516505 \
+      CP work/CPU CP work/memory CP work/lcd
+FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/memory.vhd 2026/07/06.13:18:28 P.20131013
+EN work/memory 1783516501 FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/memory.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/memory/Behavioral 1783516502 \
+      FL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/memory.vhd EN work/memory 1783516501

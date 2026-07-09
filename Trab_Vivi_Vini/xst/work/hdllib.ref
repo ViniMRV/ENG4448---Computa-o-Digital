@@ -1,0 +1,10 @@
+EN lcd NULL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/lcd.vhd sub00/vhpl06 1783516503
+AR lcd behavioral C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/lcd.vhd sub00/vhpl07 1783516504
+AR main behavioral C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/main.vhd sub00/vhpl09 1783516506
+EN cpu NULL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/cpu.vhd sub00/vhpl02 1783516499
+AR cpu behavioral C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/cpu.vhd sub00/vhpl03 1783516500
+EN main NULL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/main.vhd sub00/vhpl08 1783516505
+EN memory NULL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/memory.vhd sub00/vhpl04 1783516501
+AR memory behavioral C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/memory.vhd sub00/vhpl05 1783516502
+AR alu behavioral C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/alu.vhd sub00/vhpl01 1783516498
+EN alu NULL C:/Users/aula2.ELE/Desktop/Trab_Vivi_Vini/alu.vhd sub00/vhpl00 1783516497

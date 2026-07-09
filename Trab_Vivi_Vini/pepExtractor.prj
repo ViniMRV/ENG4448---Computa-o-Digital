@@ -1,0 +1,5 @@
+work	"alu.vhd"
+work	"cpu.vhd"
+work	"lcd.vhd"
+work	"main.vhd"
+work	"memory.vhd"

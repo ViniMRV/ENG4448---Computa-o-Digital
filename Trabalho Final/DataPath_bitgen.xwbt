@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\TEMP\novo_teste\DataPath.ncd
-OUTFILE=C:\TEMP\novo_teste\DataPath.bit
-FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\TEMP\novo_teste
-LICENSE=WebPack
-USER_INFO=211165492_176193773_0_658

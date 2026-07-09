@@ -1,0 +1,5 @@
+vhdl work "alu.vhd"
+vhdl work "memory.vhd"
+vhdl work "lcd.vhd"
+vhdl work "cpu.vhd"
+vhdl work "main.vhd"
