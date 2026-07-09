@@ -22,7 +22,7 @@ entity lcd is
 
            lcd_rw     : out STD_LOGIC; 
 
-           lcd_data   : out STD_LOGIC_VECTOR (3 downto 0)); -- Modificado para 4 bits físicos
+           lcd_data   : out STD_LOGIC_VECTOR (3 downto 0)); -- Modificado para 4 bits fsicos
 
 end lcd;
 
@@ -32,7 +32,7 @@ architecture Behavioral of lcd is
 
 
 
-    -- Estados explícitos divididos em High (H) e Low (L) para o protocolo de 4 bits
+    -- Estados explcitos divididos em High (H) e Low (L) para o protocolo de 4 bits
 
     type state_type is (
 
@@ -54,7 +54,7 @@ architecture Behavioral of lcd is
 
 
 
-    -- Contadores robustos de 22 bits para evitar estouro em clocks rápidos
+    -- Contadores robustos de 22 bits para evitar estouro em clocks rpidos
 
     signal delay_cnt    : unsigned(21 downto 0) := (others => '0');
 
@@ -105,7 +105,7 @@ begin
 
     -------------------------------------------------------------------
 
-    -- CONVERSÃO HEXADECIMAL PARA ASCII
+    -- CONVERSO HEXADECIMAL PARA ASCII
 
     -------------------------------------------------------------------
 
@@ -128,7 +128,7 @@ begin
     inf_ascii_l <= std_logic_vector(unsigned(inf_hex_low) + x"30") when unsigned(inf_hex_low) < 10 else std_logic_vector(unsigned(inf_hex_low) + x"37");
 
 	-------------------------------------------------------------------
-    -- CONVERSÃO DECIMAL PARA ASCII (Lógica Combinacional Segura para XST)
+    -- CONVERSO DECIMAL PARA ASCII (Lgica Combinacional Segura para XST)
     -------------------------------------------------------------------
     inf_num <= to_integer(unsigned(info_stable));
 
@@ -161,7 +161,7 @@ begin
         else                    t := 0; u := temp_t;
         end if;
 
-        -- Converte os dígitos calculados para os caracteres ASCII correspondentes
+        -- Converte os dgitos calculados para os caracteres ASCII correspondentes
         ascii_dec_h <= std_logic_vector(to_unsigned(h + 48, 8));
         ascii_dec_t <= std_logic_vector(to_unsigned(t + 48, 8));
         ascii_dec_u <= std_logic_vector(to_unsigned(u + 48, 8));
@@ -169,7 +169,7 @@ begin
 
 -------------------------------------------------------------------
 
-    -- DECODIFICADOR DE INSTRUÇÕES (OPCODE -> TEXTO ASCII)
+    -- DECODIFICADOR DE INSTRUES (OPCODE -> TEXTO ASCII)
 
     -------------------------------------------------------------------
 
@@ -177,7 +177,7 @@ begin
 
     begin
 
-        -- Valores padrão (espaços em branco x"20")
+        -- Valores padro (espaos em branco x"20")
 
         inst_c1 <= x"20"; inst_c2 <= x"20"; inst_c3 <= x"20"; inst_c4 <= x"20";
 
@@ -363,7 +363,7 @@ begin
 
             when others => 
 
-                inst_c1 <= x"3F"; -- '?' (Instrução desconhecida ou endereço de ponteiro)
+                inst_c1 <= x"3F"; -- '?' (Instruo desconhecida ou endereo de ponteiro)
 
         end case;
 
@@ -430,7 +430,7 @@ begin
 
     -------------------------------------------------------------------
 
-    -- PROCESSO SÍNCRONO (Geração de Pulso e Avanço de Estados)
+    -- PROCESSO SNCRONO (Gerao de Pulso e Avano de Estados)
 
     -------------------------------------------------------------------
 
@@ -496,7 +496,7 @@ begin
 
             else
 
-                -- Pulso estável de Enable (~1.2us em 50MHz)
+                -- Pulso estvel de Enable (~1.2us em 50MHz)
 
                 if e_cnt < 60 then
 
@@ -522,7 +522,7 @@ begin
 
                     
 
-                    -- Incrementa o índice apenas após transmitir a parte LOW do caractere
+                    -- Incrementa o ndice apenas aps transmitir a parte LOW do caractere
 
                     if state = SEND_L1_L or state = SEND_L2_L then
 
@@ -550,7 +550,7 @@ begin
 
     -------------------------------------------------------------------
 
-    -- PROCESSO COMBINACIONAL (Lógica de Barramento de 4 bits)
+    -- PROCESSO COMBINACIONAL (Lgica de Barramento de 4 bits)
 
     -------------------------------------------------------------------
 
@@ -572,13 +572,13 @@ begin
 
             when POWER_ON =>
 
-                delay_target <= to_unsigned(1500000, 22); -- 30ms (Estabilização de energia)
+                delay_target <= to_unsigned(1500000, 22); -- 30ms (Estabilizao de energia)
 
                 next_state <= INIT_3A;
 
                 
 
-            -- Sequência de Inicialização Nativa em Modo de 4 Bits
+            -- Sequncia de Inicializao Nativa em Modo de 4 Bits
 
             when INIT_3A =>
 
@@ -600,7 +600,7 @@ begin
 
             when INIT_2 =>
 
-                lcd_data <= "0010"; delay_target <= to_unsigned(10000, 22); next_state <= FUNC_SET_H; -- Força modo 4-bits no LCD
+                lcd_data <= "0010"; delay_target <= to_unsigned(10000, 22); next_state <= FUNC_SET_H; -- Fora modo 4-bits no LCD
 
 
 
@@ -740,7 +740,7 @@ begin
 
 
 
-            -- Estado de Repouso: Aguarda mudanças nos dados de entrada
+            -- Estado de Repouso: Aguarda mudanas nos dados de entrada
 
             when IDLE =>
 

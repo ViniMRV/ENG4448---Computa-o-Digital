@@ -64,7 +64,7 @@ ARCHITECTURE Behavioral OF CPU IS
 	SIGNAL sub_op : STD_LOGIC_VECTOR(1 DOWNTO 0);
 
 BEGIN
-	-- Ligacao direta conti­nua do IR para o modulo externo do LCD
+	-- Ligacao direta contiï¿½nua do IR para o modulo externo do LCD
 	IR_out <= IR;
 
 	u_alu : ENTITY work.ALU
@@ -160,7 +160,7 @@ BEGIN
 							ELSIF sub_op = "10" THEN -- ST (Imediato)
 								MAR <= std_logic_vector(PC + 1);
 								PC <= PC + 1;
-								-- Vai para estado de espera para ler o endereço destino
+								-- Vai para estado de espera para ler o endereï¿½o destino
 								current_state <= S_MEM_READ_ADDR_FOR_ST;
 							ELSE -- LD (Imediato)
 								MAR <= std_logic_vector(PC + 1);
@@ -326,7 +326,7 @@ BEGIN
 					END IF;
 					current_state <= S_EXECUTE;
  
-					-- Captura o endereço destino onde o registrador sera salvo no ST
+					-- Captura o endereï¿½o destino onde o registrador sera salvo no ST
 				WHEN S_MEM_READ_ADDR_FOR_ST => 
 					MAR <= mem_data_i;
 					current_state <= S_MEM_WRITE;

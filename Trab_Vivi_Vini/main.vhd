@@ -33,9 +33,9 @@ architecture Behavioral of main is
     signal ir_bus : STD_LOGIC_VECTOR(7 downto 0);
     signal ram255_bus : STD_LOGIC_VECTOR(7 downto 0);
 
-    -- Sinais para geração do Clock Lento (~2 segundos)
+    -- Sinais para gerao do Clock Lento (~2 segundos)
     -- Em 50MHz, 2 segundos = 100.000.000 de ciclos. 
-    -- toggle (inversão) a cada 50.000.000 de ciclos.
+    -- toggle (inverso) a cada 50.000.000 de ciclos.
     signal cpu_clk : STD_LOGIC := '0';
     signal clk_divider : integer range 0 to 50000000 := 0;
 
@@ -102,15 +102,15 @@ begin
         data_in      => data_cpu_to_ram,
         data_out     => data_ram_to_cpu,
         we           => we_bus,
-        debug_pos255 => ram255_bus -- Posição 255 constante indo direto pro LCD
+        debug_pos255 => ram255_bus -- Posio 255 constante indo direto pro LCD
     );
      
     u_lcd: entity work.lcd
     port map (
         clk       => clk,        -- LCD recebe o clock (50MHz) 
         reset     => reset,
-        IR     => ir_bus,     -- instrução diretamente da CPU
-        info255 => ram255_bus, -- instrução 255 diretamente da RAM
+        IR     => ir_bus,     -- instruo diretamente da CPU
+        info255 => ram255_bus, -- instruo 255 diretamente da RAM
         
         lcd_rs    => lcd_rs,
         lcd_rw    => lcd_rw,
